@@ -1,0 +1,14 @@
+{
+  "name": "sinax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/SCSS/main.scss assets/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node": "^18.9.1"
+  }
+}

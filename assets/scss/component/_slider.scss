@@ -1,0 +1,44 @@
+@use "../abstract" as *;
+
+.slider__height{
+    min-height: 960px;
+}
+.slider__content {
+    & h5{
+        color: $white;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    & h1{
+        font-size: 92px;
+        color: $white;
+        font-weight: 700;
+        padding: 0 120px;
+    }
+}
+
+
+.slider__navigation {
+    top: 50%;
+    left: 0;
+    z-index: 55;
+    button {
+        font-size: 48px;
+        color: #fff;
+    }
+}
+.slider__button-next {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 55;
+}
+
+.slider__button-prev {
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 55;
+}

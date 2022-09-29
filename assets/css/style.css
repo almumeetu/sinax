@@ -1232,7 +1232,7 @@ p {
   color: #333333;
 }
 .features__content p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .features__content a {
   font-size: 13px;
@@ -1272,6 +1272,95 @@ p {
 .service__text p {
   font-size: 14px;
   line-height: 26px;
+}
+
+.portfolio {
+  position: relative;
+}
+.portfolio__thumb::before {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  opacity: 0;
+  z-index: 9;
+}
+.portfolio__thumb img {
+  width: 100%;
+}
+.portfolio:hover ::before {
+  opacity: 1;
+}
+.portfolio__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  padding-bottom: 10px;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio__text h4 {
+  font-size: 16px;
+  color: #ffffff;
+}
+.portfolio__text h4:hover {
+  opacity: 0.7;
+}
+.portfolio__text span {
+  font-size: 13px;
+  color: #cecece;
+}
+.portfolio:hover .portfolio__text {
+  opacity: 1;
+  visibility: visible;
+  padding-bottom: 30px;
+}
+
+.image-popups {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+.image-popups:hover {
+  color: #f26957;
+}
+
+.portfolio:hover .image-popups {
+  opacity: 1;
+  visibility: visible;
+  top: 30px;
+}
+
+.portfolio-menu button {
+  margin: 0 12px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.portfolio-menu button.active {
+  color: #f26957;
 }
 
 /*# sourceMappingURL=style.css.map */

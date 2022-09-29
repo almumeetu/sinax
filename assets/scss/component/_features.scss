@@ -1,0 +1,35 @@
+@use "../abstract" as *;
+
+.features {
+    &__thumb {
+        & img {
+            width: 100%;
+        }
+
+    }
+    &__content {
+        & h3 {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 700;
+            color: $black;
+        }
+        & p {
+            margin-bottom: 20px;
+        }
+        & a {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: $black-soft-light;
+            font-weight: 700;
+            &:hover{
+                color: $theme-color;
+            }
+            & i {
+                margin-left: 5px;
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+}

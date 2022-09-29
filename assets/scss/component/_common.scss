@@ -495,3 +495,26 @@ p {
 	box-shadow: 0 0 0 0 rgba(255,255,255, 0);
 }
 }
+
+
+
+// Section-title
+.section-title {
+	& span {
+		color: $black-soft;
+		text-transform: uppercase;
+		display: block;
+	}
+	& h2 {
+		font-size: 40px;
+		font-weight: 700;
+	}
+	& p {
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 400;
+		color: $body-text;
+		padding: 0pc 40px;
+		margin: 0;
+	}
+}

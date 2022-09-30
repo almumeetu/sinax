@@ -48,7 +48,7 @@
   width: 100%;
 }
 .about__text {
-  padding: 0px 100px;
+  padding: 0px 78px;
 }
 .about__text span {
   font-size: 15px;
@@ -62,7 +62,7 @@
   color: #333333;
   margin-top: 10px;
   margin-bottom: 20px;
-  padding-right: 90px;
+  padding-right: 225px;
   font-weight: 700;
 }
 .about__text p {

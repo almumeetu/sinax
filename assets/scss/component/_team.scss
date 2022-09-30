@@ -1,0 +1,78 @@
+@use "../abstract" as *;
+// Team-----------
+
+.team{
+    position: relative;
+    &__thumb{
+        position: relative;
+        &::before{
+            position: absolute;
+            background: rgba(0,0,0,0.7);
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            @include transition (0.3s);
+            opacity:0;
+            visibility: hidden;
+        }
+        &-info{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 30px 40px;
+            padding-bottom: 10px;
+            z-index: 2;
+            opacity: 0;
+            visibility: hidden;
+            @include transition (0.3s);
+            & P{
+                color: $white;
+                margin-bottom:20px;
+            }
+            & .team-social{
+                & a {
+                    color: $black;
+                    font-size: 15px;
+                    height: 35px;
+                    width: 35px;
+                    text-align: center;
+                    line-height: 38px;
+                    background: $white;
+                    display: inline-block;
+                    border-radius: 100%;
+                    margin: 0 2px;
+                    &:hover{
+                        background: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &:hover{
+        & ::before{
+            opacity: 1;
+            visibility: visible;
+        }
+        & .team__thumb-info{
+            opacity: 1;
+            visibility: visible;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__text{
+        & h3{
+            color: $black;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+    }
+    & span {
+        color: $black;
+    }
+}

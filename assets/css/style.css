@@ -470,7 +470,7 @@ p {
 }
 
 .footer-bg {
-  background: #000;
+  background: #222222;
 }
 
 /*--
@@ -985,6 +985,112 @@ p {
 }
 .read-more a i {
   margin-left: 5px;
+}
+
+.footer-widget p {
+  color: #949494;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.footer-widget ul li {
+  margin-bottom: 20px;
+}
+.footer-widget ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-widget ul li a {
+  color: #949494;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  display: block;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.footer-widget ul li a:hover {
+  color: #f26957;
+}
+.footer-widget ul li span {
+  color: #6d6d6d;
+  display: block;
+}
+.footer-widget .footer-widget-title {
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 38px;
+  background: #353333;
+  display: inline-block;
+  border-radius: 100%;
+  margin: 0 2px;
+}
+.footer-social a:hover {
+  background: #f26957;
+  color: #ffffff;
+}
+
+.subscribe-footer form {
+  position: relative;
+}
+.subscribe-footer form input {
+  background: #3f3f3f;
+  height: 45px;
+  padding: 0 15px;
+  width: 100%;
+  border: 0;
+  color: #ffffff;
+}
+.subscribe-footer form input:-moz-placeholder, .subscribe-footer form input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.subscribe-footer form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  border: 0;
+  background: transparent;
+  border-left: 1px solid #666;
+}
+.subscribe-footer form button:hover {
+  color: #f26957;
+}
+
+.copyright-area {
+  background: #2e2e2e;
+  padding: 30px 0;
+}
+
+.copyright-text p {
+  color: #949494;
+  margin: 0;
+}
+
+.footer-menu ul {
+  text-align: end;
+}
+.footer-menu ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.footer-menu ul li a {
+  color: #949494;
+}
+.footer-menu ul li a:hover {
+  color: #f26957;
 }
 
 /*# sourceMappingURL=style.css.map */

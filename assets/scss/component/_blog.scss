@@ -1,0 +1,49 @@
+@use "../abstract" as *;
+
+.blog {
+    &__img{
+        width: 100%;
+    }
+    &__content{
+        padding: 35px 30px;
+        & h4{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.blog-meta{
+    & span{
+        font-size: 14px;
+        margin-right: 10px;
+        color: #666666;
+        text-transform: uppercase;
+
+        & a{
+            color: $theme-color;
+        }
+    }
+    & p {
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+.read-more{
+    border-top: 1px solid #dddddd;
+    padding-top: 20px;
+    & a {
+        font-size: 13px;
+        color: $black;
+        font-weight: 700;
+        @include transition(0.3s);
+        &:hover{
+            color: $theme-color;
+        }
+        & i {
+            margin-left: 5px;
+        }
+    }
+}

@@ -200,6 +200,34 @@
 
 
 	////////////////////////////////////////////////////
+		// owlCarousel
+		$('.brand-active').owlCarousel({
+			loop:true,
+			autoplay:true,
+			autoplaySpeed: 300,
+			margin:30,
+			items:6,
+			navText: [
+				'<i class="fa fa-angle-left"></i>',
+			    '<i class="fa fa-angle-right"></i>'
+		    ],
+			nav:false,
+			dots:false,
+			responsive:{
+				0:{
+					items:1
+				},
+				767:{
+					items:3
+				},
+				992:{
+					items:6
+				}
+			}
+		})
+
+
+	////////////////////////////////////////////////////
     // 13. Masonary Js
 	$('.grid').imagesLoaded( function() {
 		// init Isotope
@@ -227,6 +255,12 @@
 	});
 
 	});
+
+
+
+
+
+
 
 	/* magnificPopup img view */
 	$('.image-popups').magnificPopup({

@@ -1,0 +1,6 @@
+@use "../abstract" as *;
+
+.owl-carousel .owl-item img {
+	display: inline-block;
+	width: inherit;
+}

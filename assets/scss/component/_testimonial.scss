@@ -1,0 +1,33 @@
+@use "../abstract" as *;
+
+.testimonial{
+    padding: 40px;
+    &__content {
+        & p {
+            color:#e5e5e5;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #424242;
+        }
+    }
+    &__author {
+        padding-top: 20px;
+        & .author-details{
+            margin-left: 20px;
+            margin-top: 12px;
+            & h4 {
+                color: $white;
+                margin: 0;
+            }
+            & span{
+                color: #a6a6a6;
+            }
+        }
+    }
+    &__icon{
+        & i {
+            font-size: 41px;
+            color: #fff;
+            margin-top: 20px;
+        }
+    }
+}

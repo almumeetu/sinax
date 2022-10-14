@@ -38,9 +38,6 @@
     }
 }
 
-.footer-logo{
-
-}
 
 .footer-social{
     & a {
@@ -82,6 +79,7 @@
             height: 100%;
             width: 50px;
             border: 0;
+            color: $footer-color;
             background: transparent;
             border-left: 1px solid #666;
             &:hover {
@@ -105,9 +103,17 @@
 .footer-menu {
     & ul{
         text-align: end;
+        @media #{$xs}{
+           text-align: start;
+        }
         & li{
             display: inline-block;
             margin-left: 10px;
+            @media #{$xs}{
+                &:first-child {
+                    margin-left: 0px;
+                }
+             }
             & a {
                 color: $footer-color;
                 &:hover{

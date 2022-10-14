@@ -2,6 +2,18 @@
 
 .slider__height{
     min-height: 950px;
+    background-position: center center;
+    background-size: cover;
+        @media #{$laptop}{
+            min-height: 767px;
+        }
+        @media #{$lg}{
+            min-height: 667px;
+        }
+        @media #{$md}{
+            min-height: 550px;
+        }
+       
 }
 .slider__content {
     & h5{
@@ -14,6 +26,28 @@
         color: $white;
         font-weight: 700;
         padding: 0 120px;
+        @media #{$lg}{
+            font-size: 60px;
+            padding: 0px 50px;
+        }
+        @media #{$md}{
+            font-size: 50px;
+            padding: 0px 30px;
+        }
+        @media #{$sm}{
+            font-size: 50px;
+            padding: 0px 30px;
+        }
+        @media #{$xs}{
+            font-size: 50px;
+            padding: 0px 30px;
+        }
+    }
+}
+.slider__content-2{
+    & h1 {
+        padding: 0px;
+        margin-bottom: 60px;
     }
 }
 

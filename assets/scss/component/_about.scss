@@ -7,6 +7,23 @@
     }
     &__text{
         padding: 0px 78px;
+        @media #{$laptop}{
+            padding: 0px 60px;
+        }
+        @media #{$lg}{
+            padding: 0px 20px;
+        }
+        @media #{$md}{
+            padding: 30px;
+        }
+        @media #{$sm}{
+            padding: 30px;
+        }
+        @media #{$xs}{
+            padding: 20px;
+        }
+        
+        
         & span{
             font-size: 15px;
             color: #8e8e8e;
@@ -21,9 +38,36 @@
             margin-bottom: 20px;
             padding-right: 225px;
             font-weight: 700;
+            @media #{$laptop}{
+                padding-right: 20px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            @media #{$lg}{
+                padding-right: 0px;
+                font-size: 28px;
+                margin-bottom: 5px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+                font-size: 28px;
+            }
+            @media #{$xxs}{
+                padding-right: 0px;
+                font-size: 28px;
+            }
         }  
         & p {
             margin-bottom: 50px;
+            @media #{$laptop}{
+                margin-bottom: 20px;
+            }
+            @media #{$lg}{
+                margin-bottom: 15px;
+            }
+            @media #{$xs}{
+                margin-bottom: 20px;
+            }
         }
     }
 

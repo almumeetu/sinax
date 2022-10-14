@@ -5,6 +5,9 @@
     position: relative;
     &__thumb{
         position: relative;
+        & img{
+            width: 100%;
+        }
         &::before{
             position: absolute;
             background: rgba(0,0,0,0.7);

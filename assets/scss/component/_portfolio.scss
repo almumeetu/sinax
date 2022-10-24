@@ -91,3 +91,53 @@
         }
     }
 }
+
+
+// Portfolio-details start here
+
+.portfolio-details-area{
+    & .portfolio-details-img{
+        & img{
+            width: 100%;
+        }
+    }
+    & .project-info{
+        padding: 50px 40px;
+        & h4{
+            color: $white;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+        & h6{
+            font-size: 16px;
+            font-weight: 600;
+            color: $white;
+            margin-bottom: 25px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            & span{
+                font-weight: 400;
+                color: #d3d4d5;
+                margin-left: 5px;
+            }
+        }
+    }
+    .details-content{
+        & h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+    }
+}
+.related-project-area{
+    & .related-project{
+        & img{
+            width: 100%;
+         
+        }
+    }
+
+}

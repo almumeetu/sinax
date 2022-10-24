@@ -38,13 +38,11 @@
 	});
 
 	////////////////////////////////////////////////////
-    // 02. Mobile Menu Js
+	// meanmenu
 	$('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
-		meanScreenWidth: "991",
-		meanExpand: ['<i class="fal fa-plus"></i>'],
+		meanScreenWidth: "991"
 	});
-
 
 	////////////////////////////////////////////////////
     // 03. Sidebar Js

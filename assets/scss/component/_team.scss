@@ -79,3 +79,12 @@
         color: $black;
     }
 }
+.team__icon{
+    margin-top:45px;
+    & a{
+        color: $black;
+        &:hover{
+            color: $theme-color;
+        }
+    }
+}

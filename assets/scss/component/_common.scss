@@ -224,6 +224,19 @@ p {
 		color: $theme-color;
 	}
 }
+.contact-btn {
+	background: $white;
+	padding: 17px 55px;
+	line-height: 1;
+	font-weight: 700;
+	color: $theme-color;
+	border-radius: 0px;
+	@include transition (.3s);
+	&:hover {
+		background: $white;
+		color:$black;
+	}
+}
 
 /*--
     - Common Classes
@@ -288,7 +301,9 @@ p {
 .news_2-bg{
 	background: $news_2-bg;
 }
-
+.contact-bg{
+	background: $contact-bg;
+}
 
 // .primary-bg {
 // 	background: #222;

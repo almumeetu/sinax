@@ -13,6 +13,28 @@
         padding-top: 270px;
         padding-right: 180px;
         padding-left: 180px;
+        @media #{$laptop}{
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        @media #{$lg}{
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        @media #{$md}{
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        @media #{$sm}{
+            padding-right: 0px;
+            padding-left: 0px;
+            font-size: 35px;
+        }
+        @media #{$xs}{
+            padding-right: 0px;
+            padding-left: 0px;
+            font-size: 30px;
+        }
        }
     }
     &__icon{

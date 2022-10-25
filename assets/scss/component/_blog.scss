@@ -75,3 +75,86 @@
         color: $theme-color;
     }
 }
+
+// Blog-right Start Here
+
+
+
+
+
+
+.search-widget{
+    padding: 30px 25px;
+    background: #fff;
+    & h3{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        position: relative;
+        &::before{
+            background: #cccccc none repeat scroll 0 0;
+            bottom: -5px;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 60px;
+        }
+    }
+}
+
+.search-box {
+    & form {
+        position: relative;
+        padding-top: 10px;
+        & input {
+            padding: 20px;
+            width: 100%;
+            color: #ababab;
+            border:1px solid #f5f5f5;
+            &:-moz-placeholder, &::placeholder{
+                color: #ababab;
+                font-size: 14px;
+            } 
+        }
+        & button{
+            position: absolute;
+            top: 1;
+            right: 0;
+            height: 70px;
+            width: 70px;
+            color:$white;
+            background: $black;
+            & i {
+                font-size: 22px;
+            }
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+.about-us-widget {
+    padding: 30px 25px;
+    background: #fff;
+    & h3{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        position: relative;
+        &::before{
+            background: #cccccc none repeat scroll 0 0;
+            bottom: -5px;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 60px;
+        }
+    }
+}
+
+
+// Blog-end Start Here

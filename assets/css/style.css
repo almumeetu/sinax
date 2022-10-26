@@ -1293,6 +1293,9 @@ p {
 .news-blog-item .news-blog-img {
   margin-bottom: 35px;
 }
+.news-blog-item .news-blog-img a img {
+  width: 100%;
+}
 .news-blog-item .news-blog-content {
   padding: 0px 25px;
 }
@@ -1328,22 +1331,6 @@ p {
   padding-top: 10px;
   padding-left: 25px;
   padding-bottom: 30px;
-}
-
-.news-blog-content > h3 a:hover {
-  color: #fbba42;
-}
-
-.blog-content-img > img {
-  width: 100%;
-}
-
-.news-blog-img > img {
-  width: 100%;
-}
-
-.news-blog-img a > img {
-  width: 100%;
 }
 
 .search-widget {
@@ -1483,6 +1470,113 @@ p {
   padding: 5px 10px;
   font-size: 12px;
   font-weight: 600;
+}
+
+/* news-blog-details css start here */
+.news-blog-content-2 {
+  border-bottom: none;
+}
+
+.blog-post-tag > a {
+  border: 1px solid #e6e6e6;
+  padding: 12px 14px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #8b8b8b;
+}
+
+.blog-post-tag > a:hover {
+  background: #f8ca42;
+  color: #8b8b8b;
+}
+
+.blog-share-icon > a {
+  color: #595959;
+  padding-left: 25px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.blog-share-icon > a:hover {
+  color: #f8ca42;
+}
+
+.news-blog-content-2 {
+  border-bottom: 1px solid #acacac;
+}
+
+/* blog comments */
+.comments-avatar {
+  float: left;
+}
+
+.comments-text {
+  margin-left: 145px;
+}
+
+.avatar-name > h5 {
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.avatar-name > span {
+  color: #646464;
+  font-size: 12px;
+  float: right;
+}
+
+.avatar-name {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.comments-box {
+  border-bottom: 1px solid #ececec;
+}
+
+.comments-text > p {
+  color: #646464;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 25;
+}
+
+.comments-text > a {
+  border: 1px solid #ddd;
+  color: #444;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.comments-text > a:hover {
+  background: #fbba42;
+  border-color: #fbba42;
+}
+
+.comments-reply {
+  padding-left: 160px;
+  margin-top: 40px;
+}
+
+.post-comments-form input {
+  border: 1px solid #e6e6e6;
+  height: 45px;
+  margin-bottom: 25px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.post-comments-form textarea {
+  border: 1px solid #e6e6e6;
+  height: 140px;
+  margin-bottom: 25px;
+  padding: 15px 15px;
+  width: 100%;
 }
 
 .footer-widget p {

@@ -44,6 +44,17 @@
 		meanScreenWidth: "991"
 	});
 
+	//mobile side menu
+	$('.side-toggle').on('click', function () {
+		$('.side-info').addClass('info-open');
+		$('.offcanvas-overlay').addClass('overlay-open');
+	})
+
+	$('.side-info-close,.offcanvas-overlay').on('click', function () {
+		$('.side-info').removeClass('info-open');
+		$('.offcanvas-overlay').removeClass('overlay-open');
+	})
+
 	////////////////////////////////////////////////////
     // 03. Sidebar Js
 	$(".sidebar-toggle-btn").on("click", function () {
@@ -54,6 +65,37 @@
 		$(".sidebar__area").removeClass("sidebar-opened");
 		$(".body-overlay").removeClass("opened");
 	});
+
+
+		
+
+	////////////////////////////////////////////////////
+		// owlCarousel
+		$('.brand-active').owlCarousel({
+			loop:true,
+			autoplay:true,
+			autoplaySpeed: 300,
+			margin:30,
+			items:6,
+			navText: [
+				'<i class="fa fa-angle-left"></i>',
+			    '<i class="fa fa-angle-right"></i>'
+		    ],
+			nav:false,
+			dots:false,
+			responsive:{
+				0:{
+					items:2
+				},
+				767:{
+					items:3
+				},
+				992:{
+					items:6
+				}
+			}
+		})
+
 
 
 	////////////////////////////////////////////////////
@@ -85,16 +127,16 @@
 
 
 	////////////////////////////////////////////////////
-    // 06. Sticky Header Js
-	windowOn.on('scroll', function () {
-		var scroll = $(window).scrollTop();
-		if (scroll < 100) {
-			$("#header-sticky").removeClass("sticky");
-		} else {
-			$("#header-sticky").addClass("sticky");
-		}
-	});
 
+//sticky menu activation
+win.on('scroll', function () {
+	var scroll = win.scrollTop();
+	if (scroll < 60) {
+		$(".header-sticky").removeClass("sticky-menu");
+	} else {
+		$(".header-sticky").addClass("sticky-menu");
+	}
+});
 
 	////////////////////////////////////////////////////
     // 07. Data Background Js
@@ -195,35 +237,6 @@
 			},
 		},
 	});
-
-	
-
-	////////////////////////////////////////////////////
-		// owlCarousel
-		$('.brand-active').owlCarousel({
-			loop:true,
-			autoplay:true,
-			autoplaySpeed: 300,
-			margin:30,
-			items:6,
-			navText: [
-				'<i class="fa fa-angle-left"></i>',
-			    '<i class="fa fa-angle-right"></i>'
-		    ],
-			nav:false,
-			dots:false,
-			responsive:{
-				0:{
-					items:2
-				},
-				767:{
-					items:3
-				},
-				992:{
-					items:6
-				}
-			}
-		})
 
 
 	////////////////////////////////////////////////////

@@ -12,99 +12,260 @@
 .header-transparent-team{
     background: $white;
 }
-.header {
-    &__icon {
-        margin-left: 50px;
-        margin-top: 48px;
-        & a {
-            color: $white;
-            font-size: 16px; 
-        }
-    }
-    &__menu {
-        & ul {
-            margin-bottom: 0px;
-            & li {
-                display: inline-block;
-                margin-left: 25px;
-                margin-bottom: 0px;
-                position: relative;
-                @include transition (0.3s);
-                & a {
-                    text-decoration: none;
-                    color: $white;
-                    font-weight: 700;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    padding: 45px 0px;
-                    display: block;
-                    @include transition (0.3s);
-                }
-                &:hover {
-                    & > a {
-                        color: $theme-color;
-                    }
-                }
-                & ul.submenu {
-                    position: absolute;
-                    background: $black;
-                    width: 200px;
-                    top: 120%;
-                    left: 0;
-                    opacity: 0;
-                    visibility: hidden;
-                    padding-left: 0px;
-                    @include transition (0.3s);
-                    & li{
-                        margin: 0;
-                        display:block;
-                        & a{
-                            padding: 10px 12px;
-                            font-size: 13px;
-                            font-weight: 400;
-                            line-height: 1;
-                        }
-                        & ul.submenu {
-                            top: 0;
-                            left: 120%;
-                            opacity: 0;
-                            visibility: hidden;
-                            @include transition (0.3s);  
-                        }
-                        &:hover > ul.submenu {
-                            opacity: 1;
-                            visibility: visible;
-                            left: 100%;
-                        }
-                    }
-                }
-                &:hover ul.submenu {
-                    opacity: 1;
-                    visibility: visible;
-                    top: 100%;
-                }
-            }
-           
-        }
-    }
-}
-.header .team__menu {
-    & ul{
-        & li{
-            & a{
-                color: $black;
-                &:hover{
-                    color: $theme-color;
-                }
+
+
+
+/*  Header Top CSS */
+.header-top {
+    border-bottom: 1px solid #E7EAEE;
+    & .header-top-left {
+       & ul { 
+           & li {
+            font-weight: 400;
+           & span {
+                font-weight: 500;
+                color: #1A1C20;
             }
         }
     }
+  }
+  & .header-location{
+    text-align: right;
+    & ul li {
+        font-size: 14px;
+       & i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        & a{
+            font-weight: 400;
+            
+        }
+       
+    }
 }
-.team__menu ul li ul.submenu li a {
-	color: $white;
+& .br-left{
+    border-left: 1px solid #E7EAEE;
+}
+& .top-button{
+  & a{
+    background-color: $theme-color;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    padding: 0px 40px;
+    color: $white;
+  }
+} 
+& .header-language .nice-select{
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    padding-right: 55px;
+    &:after{
+        right: 30px;
+        height: 8px;
+        width: 8px;
+        top: 45%;
+    }
+}
+& .header-language .nice-select .list {
+    width: 200px;
 }
 
-.header-2{
-    background: $footer-bg;
-    
+ &{
+    @media #{$md,$xs} {
+        display: none;
+    }
+ }
 }
+
+
+
+
+
+
+
+
+/*  Header Top End CSS */
+
+/* 02. Header CSS */
+
+.header-menu.header-sticky.sticky-menu,
+.mobile-header.header-sticky.sticky-menu {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 999;
+	background: #fff;
+    animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+    @include transition(.3s);
+}
+.sticky-menu {
+    & .header-menu-bg-3 {
+        box-shadow: none;
+        padding: 0px 0px;
+    }
+}
+
+.header-menu{
+    & .header-logo{
+        margin-left: 35px;
+        @media #{$md,$xs}{
+            margin-top: 35px;
+        }
+    }
+}
+.side-menu-icon{
+   
+	margin-top: 37px;
+	margin-right: 35px;
+    & .side-toggle{
+        & i{
+            color: $white;
+        }
+    }
+}
+.custom-container {
+	height: 110px;
+}
+
+//header menu css start
+
+.main-menu-wrapper{
+    &__search{
+        margin-right: 40px;
+    }
+    &__call-number{
+        & span{
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        & h5{
+            font-size: 20px;
+            font-weight: 700;
+            color: $theme-color;
+        }
+    }
+}
+
+.main-menu {
+    text-align: right;
+    margin-right: 35px;
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 40px;
+            position: relative;
+            @media #{$laptop} {
+                margin: 0px 18px;
+            }
+            @media #{$lg} {
+                margin: 0px 10px;
+            }
+            & a {
+                font-size: 15px;
+                color: $white;
+                display: block;
+                padding: 38px 0px;
+                text-transform: uppercase;
+            }
+            /*submenu start*/
+			& .sub-menu {
+				background: $white none repeat scroll 0 0;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 119%;
+                transition: all 0.3s ease 0s;
+                visibility: hidden;
+                width: 240px;
+                z-index: 9;
+                border-top: 4px solid $theme-color;
+                text-align: left;
+                padding: 15px 0;
+				& li {
+					display: block;
+					margin: 0px;
+                    padding: 8px 25px 8px 25px;
+					& a {
+                        padding: 0px;
+                        display: inline-block;
+                        color: #212237;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            width: 0;
+                            height: 1px;
+                            bottom: 0;
+                            position: absolute;
+                            left: auto;
+                            right: 0;
+                            z-index: -1;
+                            transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+                            background: $theme-color;
+                        }
+					}
+                    &:hover {
+                        & a {
+                            color: $theme-color;
+                            &:before {
+                                width: 100%;
+                                left: 0;
+                                right: auto;
+                            }
+                        }
+                    }
+				}
+			}
+			/*submenu end*/
+            &:hover  {
+				& a {
+					color: $theme-color;
+				}
+                &.menu-item-has-children::after {
+                    color: $theme-color;
+                }
+				& .sub-menu {
+					opacity: 1;
+					visibility: visible;
+					top: 100%;
+				}
+			}
+            &.menu-item-has-children {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: '\f078';
+                    font-size: 12px;
+                    color: #212237;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -14px;
+                    font-family: "Font Awesome 5 Pro";
+                    @include transition(.3s);
+                    @media #{$lg} {
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*menu right call-icon start*/
+
+.mobile-menu.mean-container {
+	clear: both;
+	overflow: hidden;
+}
+/*menu right call-icon start*/
+
+//header style three end
+
+

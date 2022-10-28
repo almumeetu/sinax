@@ -7,9 +7,7 @@
     }
     &__text{
         padding: 0px 78px;
-        @media #{$laptop}{
-            padding: 0px 60px;
-        }
+
         @media #{$lg}{
             padding: 0px 20px;
         }

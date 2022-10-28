@@ -125,10 +125,15 @@
         }
     }
     .details-content{
+        padding-right: 40px;
+        @media #{$md,$sm,$xs}{
+            padding: 0px;
+        } 
         & h2 {
             font-size: 32px;
             margin-bottom: 25px;
             font-weight: 700;
+
         }
     }
 }

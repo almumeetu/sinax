@@ -13,6 +13,9 @@
         @media #{$md}{
             min-height: 550px;
         }
+        @media #{$sm,$xs}{
+            min-height: 550px;
+        }
        
 }
 .slider__height-3{
@@ -42,7 +45,7 @@
             padding: 0px 30px;
         }
         @media #{$xs}{
-            font-size: 50px;
+            font-size: 40px;
             padding: 0px 30px;
         }
     }
@@ -53,7 +56,7 @@
         margin-bottom: 60px;
     }
 }
-.slider__content-3{
+.slider__content-3 {
     & h1 {
         font-size: 92px;
         color: $white;
@@ -64,30 +67,52 @@
             padding: 0px 50px;
         }
         @media #{$md}{
-            font-size: 50px;
+            font-size: 55px;
             padding: 0px 30px;
         }
         @media #{$sm}{
-            font-size: 50px;
+            font-size: 40px;
             padding: 0px 30px;
         }
         @media #{$xs}{
-            font-size: 50px;
-            padding: 0px 30px;
+            font-size: 40px;
+            padding: 0px 10px;
         }
     }
     & h5{
         color: $white;
         font-size: 16px;
         font-weight: 500;
-        padding-right: 500px;
         line-height: 30px;
-    }
-}
-.slider__content-3 {
-    & h5{
         padding-right: 250px;
         padding-left: 250px;
+        @media #{$md,$sm,$xs}{
+            padding: 0px 40px;
+        } 
+    }
+
+}
+.slider_about-content{
+    & h1{
+        @media #{$lg,$md,}{
+            font-size: 60px;
+            padding: 0px;
+        }
+        @media #{$sm,$xs,}{
+            font-size: 40px;
+            padding: 0px;
+            margin-top: 50px;
+        }
+        @media #{$xxs}{
+            font-size: 35px;
+            padding: 0px;
+            margin-top: 50px;
+        }
+    }
+    & h5{
+        @media #{$md,$sm,$xs}{
+            padding-right: 0px;
+        } 
     }
 }
 .slider_about-content{
@@ -105,6 +130,9 @@
     & span {
         font-size: 16px;
         color: #fefefe;
+        @media #{$sm,$xs}{
+            display: none;
+        }
     }
 
     

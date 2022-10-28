@@ -184,6 +184,9 @@
         }
 
         & .blog-share-icon {
+            @media #{$md,$sm,$xs}{
+                display: none;
+            } 
             & a {
                 color: #595959;
                 padding-left: 25px;
@@ -427,6 +430,13 @@
             padding: 5px 10px;
             font-size: 12px;
             font-weight: 600;
+        }
+    }
+}
+.banner{
+    & a{
+        & img{
+            width: 100%;
         }
     }
 }

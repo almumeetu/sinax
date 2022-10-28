@@ -368,6 +368,11 @@
   }
 }
 
+.team-menu ul li a {
+  color: #333333;
+  font-weight: 600;
+}
+
 /*menu right call-icon start*/
 .mobile-menu.mean-container {
   clear: both;

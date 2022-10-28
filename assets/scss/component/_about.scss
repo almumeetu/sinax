@@ -1,34 +1,40 @@
 @use "../abstract" as *;
-.about{     
-    &__thumb{
-        & img{
+
+.about {
+    &__thumb {
+        & img {
             width: 100%;
         }
     }
-    &__text{
+
+    &__text {
         padding: 0px 78px;
 
-        @media #{$lg}{
+        @media #{$lg} {
             padding: 0px 20px;
         }
-        @media #{$md}{
+
+        @media #{$md} {
             padding: 30px;
         }
-        @media #{$sm}{
+
+        @media #{$sm} {
             padding: 30px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             padding: 20px;
         }
-        
-        
-        & span{
+
+
+        & span {
             font-size: 15px;
             color: #8e8e8e;
             font-weight: 400;
             letter-spacing: 1px;
             text-transform: uppercase;
-        } 
+        }
+
         & h2 {
             font-size: 40px;
             color: $black;
@@ -36,34 +42,42 @@
             margin-bottom: 20px;
             padding-right: 225px;
             font-weight: 700;
-            @media #{$laptop}{
+
+            @media #{$laptop} {
                 padding-right: 20px;
                 margin-bottom: 5px;
                 margin-top: 5px;
             }
-            @media #{$lg}{
+
+            @media #{$lg} {
                 padding-right: 0px;
                 font-size: 28px;
                 margin-bottom: 5px;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 padding-right: 0px;
                 font-size: 28px;
             }
-            @media #{$xxs}{
+
+            @media #{$xxs} {
                 padding-right: 0px;
                 font-size: 28px;
             }
-        }  
+        }
+
         & p {
             margin-bottom: 50px;
-            @media #{$laptop}{
+
+            @media #{$laptop} {
                 margin-bottom: 20px;
             }
-            @media #{$lg}{
+
+            @media #{$lg} {
                 margin-bottom: 15px;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 margin-bottom: 20px;
             }
         }

@@ -363,7 +363,7 @@
 }
 .main-menu ul li.menu-item-has-children:after {
   position: absolute;
-  content: "\f078";
+  content: "";
   font-size: 12px;
   color: #212237;
   top: 50%;
